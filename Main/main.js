@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     const resetButton = () => {
         spin_btn.addEventListener('click', rollAll);
-        spin_btn.style.opacity = ''; // Reset opacity
+        spin_btn.style.opacity = ''; 
     };
     
     const icon_height = 250;
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const roll = (reel, offset) => {
 
-        // calculate how many icons will spin
         const delta = (offset + 2) * num_icons + Math.round(Math.random() * num_icons);
     
         reel.style.transform = '';
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function(){
             .then(() => {
                 const iconHeight = delta * icon_height;
             
-                //reel.style.transition = `transform ${4 + delta * time_per_icon}ms ease`;
                 setTimeout(() => {
                     reel.style.transition = `transform ${4 + delta * time_per_icon}ms cubic-bezier(.41, -0.01,.63,1.09)`;
                     reel.style.transform = `translateY(${iconHeight - 750}px)`;
@@ -93,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 reelContents[i] = currentSymbols[j].cloneNode(true);
             }
         
-            reel.innerHTML = ''; // Clear the current contents
+            reel.innerHTML = ''; 
         
             for (let j = 0; j < delta - 3; j++){
                 reel.innerHTML += `<img src="../Assets/Test_Playscreen_sym_0${Math.floor(Math.random() * 5) + 1}.png" class="img-test">`
