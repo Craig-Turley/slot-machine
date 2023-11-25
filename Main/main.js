@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
             const iconHeight = delta * icon_height
 
             setTimeout(() => {
-                reel.style.transition = `transform ${4 + delta * time_per_icon}ms ease`;
+                reel.style.transition = `transform ${4 + delta * time_per_icon}ms cubic-bezier(.41, -0.01, .63, 1.09)`;
                 reel.style.transform = `translateY(${iconHeight - 750}px)`;
             }, offset * 150);
 
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
             
                 //reel.style.transition = `transform ${4 + delta * time_per_icon}ms ease`;
                 setTimeout(() => {
-                    reel.style.transition = `transform ${4 + delta * time_per_icon}ms ease`;
+                    reel.style.transition = `transform ${4 + delta * time_per_icon}ms cubic-bezier(.41, -0.01,.63,1.09)`;
                     reel.style.transform = `translateY(${iconHeight - 750}px)`;
                 }, offset * 150)
             }); 
