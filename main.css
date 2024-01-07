@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Assets/Test_Playscreen_background.png');
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slots{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    height: 750px;
+    width: 960px;
+    margin-top: 135px;
+    overflow: hidden;
+}
+
+.reel {
+    height: 750px;
+    width: 300px;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ui {
+    position: relative;
+    display: flex;
+    top: 80px;
+}
+
+.credits {
+    position: relative;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credits img {
+    position: relative;
+    z-index: 1; 
+}
+.credits p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2; 
+    margin: 0;
+}
+
+
+.minus_plus {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 450px;
+    top: 70px;
+}
+
+.img-test {
+    top: 0px;
+}
