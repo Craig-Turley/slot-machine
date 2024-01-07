@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function(){
             reel.innerHTML = ''; 
         
             for (let j = 0; j < delta - 3; j++){
-                reel.innerHTML += `<img src="../Assets/Test_Playscreen_sym_0${Math.floor(Math.random() * 5) + 1}.png" class="img-test">`
+                reel.innerHTML += `<img src="./Assets/Test_Playscreen_sym_0${Math.floor(Math.random() * 5) + 1}.png" class="img-test">`
             }
             currentSymbols.forEach(img => {
                 reel.appendChild(img);
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function(){
             const delta = (i + 2) * num_icons + Math.round(Math.random() * num_icons);
     
             for(let j = 0; j < delta; j++) {
-                reel.innerHTML += `<img src="../Assets/Test_Playscreen_sym_0${Math.floor(Math.random() * 5) + 1}.png" class="img-test">`
+                reel.innerHTML += `<img src="./Assets/Test_Playscreen_sym_0${Math.floor(Math.random() * 5) + 1}.png" class="img-test">`
             }
     
             reel.style.height = `${(delta) * 250}px`;
