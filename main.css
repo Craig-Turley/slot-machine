@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../Assets/Test_Playscreen_background.png');
+    background-image: url('./Assets/Test_Playscreen_background.png');
     background-position: center top;
     display: flex;
     flex-direction: column;
